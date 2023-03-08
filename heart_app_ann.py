@@ -94,6 +94,6 @@ st.write(prediction)
 if prediction > 0.5:
     st.write('You will be likely to have heart disease and, as a result, die')
 else:
-    st.write('You will not be likely to have die due to a heart failure')
+    st.write('You will not be likely to have a heart failure')
 
 #print(classification_report(y_test, prediction))
