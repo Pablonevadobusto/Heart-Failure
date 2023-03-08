@@ -51,7 +51,7 @@ def user_input_features():
     serum_sodium = st.sidebar.number_input("Enter serum_sodium:")
     sex = st.sidebar.selectbox("Enter sex",(0,1))
     smoking = st.sidebar.selectbox("Enter smoking",(0,1))
-    time = st.sidebar.number_input("Enter time:")
+    time = st.sidebar.number_input("Enter follow-up time:")
 
     data = {'age':age,
             'anaemia':anaemia,
@@ -92,7 +92,7 @@ st.subheader('Prediction')
 st.write(prediction)
 
 if prediction > 0.5:
-    st.write('You will be likely to have heart disease and, as a result, die')
+    st.write('You will be likely to have a heart failure')
 else:
     st.write('You will not be likely to have a heart failure')
 
