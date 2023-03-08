@@ -9,7 +9,7 @@ from sklearn.metrics import accuracy_score, confusion_matrix, classification_rep
 from keras.utils import pad_sequences
 
 ## Loading the ann model
-model = keras.models.load_model(r'C:\Users\User\Pablo\Data Science Bootcamp\Phase 2\Assignments\ANN\heart_ann_model')
+model = keras.models.load_model('heart_ann_model')
 
 ### Opening a file with Pickle (Logistic Regression model was saved as Pickle (binary) format)
 #with open(r'C:\Users\User\Pablo\Data Science Bootcamp\Phase 2\Stream 2 - Specific Algorithms\Week 10.2 - Supervised machine learning  - classification 1\REG & CLASS\logistic_regression_model.pkl', 'rb') as file:
@@ -32,7 +32,7 @@ st.write('''
 #st.sidebar.header('User Input Features')
 
 ## add image
-image = Image.open(r'C:\Users\User\Pablo\Data Science Bootcamp\Phase 2\Assignments\ANN\cdd20-7sUlk1-PLZ0-unsplash.jpg')
+image = Image.open('cdd20-7sUlk1-PLZ0-unsplash.jpg')
 st.image(image, width=800)
 
 
